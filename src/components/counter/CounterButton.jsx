@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function CounterButton(by, incrementMethod, decrementMethod){
+export default function CounterButton({by, incrementMethod, decrementMethod}){
     return (
         <div className='Counter'> 
             <div>
@@ -8,6 +8,7 @@ export default function CounterButton(by, incrementMethod, decrementMethod){
                         onClick={() => incrementMethod(by)}>
                         +{by} 
                 </button>
+                
                 <button className='counterButton'
                         onClick={() => decrementMethod(by)}>
                         -{by} 
